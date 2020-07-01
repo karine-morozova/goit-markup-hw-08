@@ -2,6 +2,9 @@
   @extend %list;
   display: flex;
   margin-left: 86px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .nav-item {
   margin-right: 50px;
