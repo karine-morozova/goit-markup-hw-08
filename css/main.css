@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-.site-nav .link, .logo, .link.terms, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer, .social-link {
+.site-nav .link, .header-link, .logo, .link.terms, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer, .social-link {
   display: block;
   font-family: roboto, sans-serif;
   text-decoration: none;
@@ -305,25 +305,57 @@ body.modal-open {
   overflow: hidden;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 80px;
-}
-
 @media screen and (max-width: 767px) {
   .main-nav {
     max-width: 480px;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    width: 1200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .header {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav .link {
@@ -333,12 +365,19 @@ body.modal-open {
   font-family: roboto, sans-serif;
   color: #212121;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .link {
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+  }
 }
 
 .site-nav .link:hover, .site-nav .link:focus {
@@ -353,34 +392,82 @@ body.modal-open {
 .nav-item .current::after {
   content: "";
   position: absolute;
+  display: block;
   background-color: #2196f3;
   top: 100%;
-  left: 205px;
-  width: 71px;
+  left: 0;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
 }
 
-.nav-item {
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .nav-item {
+    margin-bottom: 40px;
+  }
+  .nav-item:first-child {
+    margin-top: 60px;
+  }
+  .nav-item:last-child {
+    margin-bottom: 60px;
+  }
 }
 
-.nav-item:first-child {
-  margin-top: 60px;
-}
-
-.nav-item:last-child {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .nav-item {
+    margin-right: 50px;
+  }
+  .nav-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .flex-contacts {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-contacts {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 300px;
+  }
+}
+
 .contacts-item {
-  margin-bottom: 20px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-item {
+    margin-bottom: 20px;
+  }
+  .contacts-item:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-item {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-item {
+    margin-right: 30px;
+  }
+  .contacts-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts-item:hover, .contacts-item:focus {
@@ -388,16 +475,31 @@ body.modal-open {
   fill: #2196f3;
 }
 
-.contacts-item:last-child {
-  margin-bottom: 60px;
-}
-
 .header-link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header-link {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-link {
+    font-size: 14px;
+    line-height: 1.16;
+  }
 }
 
 .header-link:hover, .header-link:focus {
@@ -445,6 +547,18 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
 .logo-text {
   color: #2196f3;
 }
@@ -459,6 +573,7 @@ body.modal-open {
   background-color: transparent;
   color: #212121;
   margin-left: auto;
+  cursor: pointer;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -486,13 +601,38 @@ body.modal-open {
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border-top: 1px solid #ececec;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 86px;
+  }
 }
 
 .menu-container.is-open {

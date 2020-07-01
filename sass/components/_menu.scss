@@ -6,11 +6,12 @@
   background-color: transparent;
   color: $title-color;
   margin-left: auto;
+  cursor: pointer;
+  transition: fill 250ms $transition-timing-function;
   &:hover,
   &:focus {
     fill: $accent-color;
   }
-  transition: fill 250ms $transition-timing-function;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -26,13 +27,23 @@
   display: none;
 }
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  border-top: 1px solid #ececec;
   background-color: $primary-white-color;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ececec;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 86px;
+  }
   &.is-open {
     display: block;
   }
