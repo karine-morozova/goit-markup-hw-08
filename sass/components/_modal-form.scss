@@ -1,6 +1,9 @@
 .form {
-  width: 528px;
-  height: 581px;
+  // width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .form-title {
   display: block;
@@ -9,11 +12,19 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .form-field {
   position: relative;
-  margin: 0 40px 28px 40px;
+  margin-top: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 28px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &.terms {
     display: flex;
   }
@@ -105,17 +116,23 @@
 }
 .terms-field {
   // width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
   margin-left: 40px;
   margin-right: 40px;
   text-align: left;
 }
 .label-checkbox {
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   align-items: center;
   color: $text-color;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .input-checkbox {
@@ -159,8 +176,10 @@
   min-width: 200px;
   height: 50px;
   padding: 0;
-  margin-top: 30px;
-  margin-bottom: 28px;
+  margin: 30px 125px 28px 125px;
+  @media screen and (min-width: 1200px) {
+    margin: 0 164px 40px 164px;
+  }
   cursor: pointer;
 
   font-weight: 700;
