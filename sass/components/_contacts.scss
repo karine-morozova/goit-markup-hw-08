@@ -1,0 +1,60 @@
+.contacts {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 69px;
+}
+
+.footer-logo {
+  @extend %link;
+  font-family: Raleway, sans-serif;
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  margin-bottom: 20px;
+
+  transition: color 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.logo-text {
+  color: $accent-color;
+}
+.list-footer {
+  @extend %list;
+  font-style: normal;
+}
+
+.address {
+  @extend %link;
+  color: $primary-white-color;
+  min-width: 231px;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address-link {
+  @extend %link;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address-item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.logo {
+  @extend %link;
+  font-family: raleway, sans-serif;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  transition: color 250ms $transition-timing-function;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+.logo-text {
+  color: $accent-color;
+}
