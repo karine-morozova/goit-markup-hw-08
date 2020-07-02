@@ -1,12 +1,13 @@
 .join-form {
   @media screen and (max-width: 1199px) {
     text-align: center;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
-    margin-top: 56px;
-    margin-bottom: 56px;
+    // margin-top: 56px;
+    // margin-bottom: 56px;
   }
 }
 .form-footer {
@@ -15,6 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 .form-input {

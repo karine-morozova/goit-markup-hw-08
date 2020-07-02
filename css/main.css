@@ -1656,7 +1656,19 @@ body.modal-open {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
@@ -1669,8 +1681,6 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    margin-top: 60px;
-    margin-bottom: 60px;
     margin-right: 69px;
   }
 }
@@ -1733,15 +1743,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .socials {
-    margin-bottom: 60px;
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .socials {
-    margin-top: 56px;
-    margin-bottom: 56px;
   }
 }
 
@@ -1809,14 +1811,13 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .join-form {
     text-align: center;
+    margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .join-form {
     margin-left: auto;
-    margin-top: 56px;
-    margin-bottom: 56px;
   }
 }
 
@@ -1835,6 +1836,12 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: block;
   }
 }
 

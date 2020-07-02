@@ -48,7 +48,12 @@
   @media screen and (min-width: 768px), (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
