@@ -103,32 +103,3 @@
     fill: $accent-color;
   }
 }
-
-// .user-item {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 170px;
-//   height: 90px;
-//   margin-right: 30px;
-//   border: 1px solid #afb1b8;
-//   border-radius: 4px;
-//   cursor: pointer;
-//   fill: $svg-color;
-//   transition: border 250ms $transition-timing-function;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-//   &:hover,
-//   &:focus {
-//     border: 1px solid $accent-color;
-//   }
-// }
-// .icon {
-//   fill: $svg-color;
-//   transition: fill 250ms $transition-timing-function;
-//   .user-item:hover &,
-//   .user-item:focus & {
-//     fill: $accent-color;
-//   }
-// }
