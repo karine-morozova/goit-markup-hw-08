@@ -309,6 +309,7 @@ body.modal-open {
   .main-nav {
     max-width: 480px;
     height: 60px;
+    padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -348,6 +349,30 @@ body.modal-open {
 
 .header {
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
