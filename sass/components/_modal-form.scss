@@ -1,20 +1,24 @@
 .form {
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    height: 609px;
+  }
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    width: 100%;
     height: 581px;
   }
 }
 .form-title {
   display: block;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin-left: 40px;
   @media screen and (max-width: 1199px) {
     margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -118,13 +122,24 @@
   }
 }
 .terms-field {
-  width: 100%;
-  text-align: left;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    margin-right: 0;
+    margin-left: 40px;
+  }
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
 }
 .label-checkbox {
   display: flex;
   font-size: 14px;
   line-height: 1.71;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+
   align-items: center;
   color: $text-color;
   cursor: pointer;
@@ -160,72 +175,10 @@
   }
 }
 .link.terms {
-  @extend %link;
-  display: block;
   margin-left: 5px;
   color: $accent-color;
   text-decoration: underline;
-  text-align: right;
 }
-// .terms-field {
-//   width: 370px;
-//   // margin-top: 20px;
-//   margin-bottom: 30px;
-//   margin-left: 40px;
-//   margin-right: 40px;
-//   text-align: left;
-// }
-// .label-checkbox {
-//   display: flex;
-//   justify-content: stretch;
-//   font-size: 12px;
-//   line-height: 1.16;
-//   color: $text-color;
-//   cursor: pointer;
-
-//   @media screen and (min-width: 1200px) {
-//     font-size: 14px;
-//     line-height: 1.71;
-//   }
-// }
-
-// .input-checkbox {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   border: 0px;
-//   padding: 0px;
-//   clip: rect(0 0 0 0);
-//   overflow: hidden;
-// }
-
-// .icon-checkbox {
-//   display: inline-block;
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 2px;
-//   margin-right: 8px;
-
-//   border: 2px solid $title-color;
-//   background-color: $primary-white-color;
-//   transition: 250ms $transition-timing-function;
-//   .input-checkbox:checked + & {
-//     background-color: $accent-color;
-//     background-image: url(../images/check.svg);
-//     background-size: cover;
-//     border-radius: 2px;
-//     border-color: $accent-color;
-//   }
-// }
-// .link.terms {
-//   @extend %link;
-//   display: block;
-//   margin-left: 5px;
-//   color: $accent-color;
-//   text-decoration: underline;
-//   text-align: right;
-// }
 .button-submit {
   min-width: 200px;
   height: 50px;

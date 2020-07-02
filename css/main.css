@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-.site-nav .link, .header-link, .logo, .link.terms, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer, .social-link {
+.site-nav .link, .header-link, .logo, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer, .social-link {
   display: block;
   font-family: roboto, sans-serif;
   text-decoration: none;
@@ -808,27 +808,34 @@ body.modal-open {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .form {
+    width: 100%;
+    height: 609px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form {
-    width: 528px;
+    width: 100%;
     height: 581px;
   }
 }
 
 .form-title {
   display: block;
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin-left: 40px;
 }
 
 @media screen and (max-width: 1199px) {
   .form-title {
     margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -947,30 +954,38 @@ body.modal-open {
 }
 
 .terms-field {
-  width: 370px;
-  margin-bottom: 30px;
-  margin-left: 40px;
   margin-right: 40px;
-  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .terms-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 
 .label-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.71;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .label-checkbox {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
@@ -1006,11 +1021,9 @@ body.modal-open {
 }
 
 .link.terms {
-  display: block;
   margin-left: 5px;
   color: #2196f3;
   text-decoration: underline;
-  text-align: right;
 }
 
 .button-submit {
