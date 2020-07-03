@@ -438,6 +438,7 @@ body.modal-open {
   .menu-container {
     display: none;
     position: absolute;
+    z-index: 9;
     top: 100%;
     left: 0;
     width: 100%;
@@ -877,8 +878,6 @@ body.modal-open {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
 }
 
 @media screen and (max-width: 767px) {
