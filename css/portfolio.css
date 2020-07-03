@@ -470,6 +470,10 @@ body.modal-open {
   display: block;
 }
 
+.site-nav {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -479,7 +483,7 @@ body.modal-open {
 }
 
 .site-nav .link {
-  display: block;
+  display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: roboto, sans-serif;
