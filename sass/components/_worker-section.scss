@@ -2,25 +2,16 @@
   @extend %section;
   background-color: $secondary-bg-color;
   @media screen and (max-width: 767px) {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 .container {

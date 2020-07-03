@@ -25,7 +25,7 @@ body {
   padding-bottom: 94px;
 }
 
-.main-nav, .container, .footer {
+.main-nav, .overlay, .container, .footer {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -309,7 +309,6 @@ body.modal-open {
   .main-nav {
     max-width: 480px;
     height: 60px;
-    padding-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,30 +348,6 @@ body.modal-open {
 
 .header {
   position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -678,14 +653,12 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .hero {
-    width: 480px;
     height: 400px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
   }
 }
@@ -711,6 +684,30 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .hero .title {
@@ -1079,31 +1076,22 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .features {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .features {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -1112,6 +1100,8 @@ body.modal-open {
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1120,6 +1110,8 @@ body.modal-open {
     width: 768px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1128,6 +1120,8 @@ body.modal-open {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1294,31 +1288,22 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .worker {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .worker {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .worker {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -1473,31 +1458,22 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -1616,31 +1592,22 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .footer-page {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-page {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-page {
-    width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
