@@ -21,6 +21,7 @@
   @extend %list;
   padding: 0;
   display: flex;
+
   width: 206px;
   @media screen and (min-width: 1200px) {
     margin-top: 21px;
@@ -49,4 +50,8 @@
 
 .icon-footer {
   fill: $primary-white-color;
+}
+.social-item.footer .social-link {
+  @extend %link;
+  display: flex;
 }

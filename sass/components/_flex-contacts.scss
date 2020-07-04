@@ -56,15 +56,15 @@
     color: $accent-color;
   }
 }
-.envelope {
-  margin-right: 10px;
-  color: $text-color;
-  .contacts-item:hover &,
-  .contacts-item:focus & {
-    fill: $accent-color;
-  }
-}
-.phone {
+// .envelope {
+//   margin-right: 10px;
+//   color: $text-color;
+//   .contacts-item:hover &,
+//   .contacts-item:focus & {
+//     fill: $accent-color;
+//   }
+// }
+.icon-contacts {
   margin-right: 10px;
   fill: $text-color;
   .contacts-item:hover &,

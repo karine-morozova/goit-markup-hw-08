@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-.site-nav .link, .header-link, .logo, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer {
+.site-nav .link, .header-link, .logo, .social-item > .link, .footer-logo, .address, .address-link, .social-item.footer, .social-item.footer .social-link {
   display: block;
   font-family: roboto, sans-serif;
   text-decoration: none;
@@ -510,23 +510,13 @@ body.modal-open {
   color: #2196f3;
 }
 
-.envelope {
-  margin-right: 10px;
-  color: #757575;
-}
-
-.contacts-item:hover .envelope,
-.contacts-item:focus .envelope {
-  fill: #2196f3;
-}
-
-.phone {
+.icon-contacts {
   margin-right: 10px;
   fill: #757575;
 }
 
-.contacts-item:hover .phone,
-.contacts-item:focus .phone {
+.contacts-item:hover .icon-contacts,
+.contacts-item:focus .icon-contacts {
   fill: #2196f3;
 }
 
@@ -1844,6 +1834,12 @@ body.modal-open {
 
 .icon-footer {
   fill: #ffffff;
+}
+
+.social-item.footer .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 1199px) {
