@@ -852,7 +852,7 @@ body.modal-open {
 
 .form-title {
   display: block;
-  padding-top: 40px;
+  margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
@@ -879,10 +879,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.form-field.coments {
-  margin-bottom: 20px;
 }
 
 .modal-input {
@@ -984,7 +980,6 @@ body.modal-open {
 .terms-field {
   margin-right: 40px;
   margin-left: 40px;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -994,6 +989,12 @@ body.modal-open {
     display: flex;
     margin-right: 0;
     margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms-field {
+    margin-bottom: 30px;
   }
 }
 
@@ -1058,7 +1059,7 @@ body.modal-open {
   min-width: 200px;
   height: 50px;
   padding: 0;
-  margin: 30px 125px 28px 125px;
+  margin: 30px 125px 40px 125px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;

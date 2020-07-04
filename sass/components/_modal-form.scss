@@ -10,7 +10,7 @@
 }
 .form-title {
   display: block;
-  padding-top: 40px;
+  margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
@@ -31,9 +31,9 @@
   &.terms {
     display: flex;
   }
-  &.coments {
-    margin-bottom: 20px;
-  }
+  // &.coments {
+  //   margin-bottom: 20px;
+  // }
 }
 
 .modal-input {
@@ -127,9 +127,12 @@
     margin-right: 0;
     margin-left: 40px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
   margin-right: 40px;
   margin-left: 40px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 .label-checkbox {
   display: flex;
@@ -183,7 +186,7 @@
   min-width: 200px;
   height: 50px;
   padding: 0;
-  margin: 30px 125px 28px 125px;
+  margin: 30px 125px 40px 125px;
   @media screen and (min-width: 1200px) {
     margin: 0 164px 40px 164px;
   }
