@@ -354,14 +354,6 @@ body.modal-open {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .site-nav .link {
   display: inline-block;
   padding-top: 10px;
